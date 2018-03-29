@@ -1,0 +1,69 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    you can compare these two files and you can know what changes i have done in my file with respect to previvous version
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    
+a) If one need some code snippet that was used in old version, he doesn't have to rewrite the code.
+b) If there is some part that doesn't look make sense, one can look up history. 
+c) If things get changed, and need to roll back to some previous version, it can be easily done.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+   Pros:
+* You can commit whenever you want.
+* Granularity is at committer's disposal.
+
+Cons:
+* You may forget to commit when you should do it.
+* It can be actually too late when you notice you should have made a commit.
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+   * Git is more programming oriented, where several files tend to consist one logical group. On the other hand, Google Docs is primarily more targeted for documents created for human readings, in which case each single file consists a meaningful piece.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+    * git log can be used to list the summaries of all the changes made to the repository.
+    * git diff can be used to see what has actually changed between two given commits.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+  * You can try changing any critical features, since you can always revert back to the point when those were working correctly. If you find something is not working, you can git log, and try the previous versions untill you find the one which works, and make diff of the last one that worked correctly and the commit following it. That result would show where and how the bug was introduced.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    * Writing my own programs.
+
+
+
+
+    MY NOTES
+    1.git log command show you all commits made in file from recent to last
+      every commits have commit id,author,date,and commit message.
+
+     2.git diff <commit id_1><commit id_2> will show you the diff between two version of a file.so you can find bug and so on.
+    
+    *. when you work on a project you often have multiple file that you want to track together,git calls such a collection of file a repository.
+       when you save a version of your files in git in other words, when you make a commit, you will save a version of every file in your repository.
+       if you have only one filr in your repository, for example game.js you already know that git stores a version of you file each time you choose to commit but you might also have some other files in your repository .for example index.html and index.css. you don't need to understand what these files are.the important thing is that all files are connected, so they are all required for the game to function properly.git will also track state of these files each time to choose a commit.a commit  is snapshots of every files in your repository at the time you choose to make a commit.
+
+    3 git log --stat command which give you some statistic about which file have changed in each commit
+
+
+    4 git clone<URL> download the entire history,it allow you to copy an entir repository from one computer to another
+
+    5. git checkout<commit id> it trmporily change our files back to how they were at the time of any commit  and it's sort of like restoring a previous version.
+       it reset of your files to how they were at the time that commit was made
+
+
