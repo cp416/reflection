@@ -38,3 +38,33 @@ Pros:
 
 Cons:
 * Can't thnink of any definite ones. Maybe can make it easier to overlook the potentially dangerous situation where two person are working on the same file at the same time.
+MY NOTES
+
+* git repository stores a bunch of metadata about the history of repository since it was created.but it's tucked away in hidden directory(.git) you can see by ls-a
+  you can create a git repository in empty directory and create files later or you can create a repository in a directly that already  contains files.git does not create a any commit when you create a repository.it contains several commits and each commits contains several files
+
+  1. git status command show which files have changed since  the last commit 
+
+  * staging area is a copy of most recent commit untill i add changes to it.
+
+  2.git diff command with no arguments it compare working directory to the staging area
+
+  3. git diff --staged command  it  compare staging area to most recent commit
+
+  4. git branch command show you the branches in your repository
+
+  5. git branch<branch name> will create a new branch
+
+  6.git checkout<branch name> 
+
+  7. git log --graph --oneline master <branch name> helps you to visulaize branch structure
+
+  8 .git merge master <branch name> merge other branch into master
+
+  9. git remote 
+
+  10.git remote add origin <URL>
+
+  11 git remote -v
+
+  12 git push <remote name> <branch name>
